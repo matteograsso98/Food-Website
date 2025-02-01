@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Details about {{ myrecipe.recipename }}
+{% endblock %}
+
+
+{% block content %}
+
+  <h1>{{ myrecipe.recipename }}</h1>
+  
+  <p>Ingredients: {{ myrecipe.ingredients }}</p>
+  
+  <p>Back to <a href="/recipes">Recipes</a></p>
+  
+{% endblock %}

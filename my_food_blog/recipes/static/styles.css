@@ -1,0 +1,35 @@
+/* styles.css */
+
+.nav-links {
+  display: flex;  /* Arrange links in a row */
+  gap: 20px;  /* Add space between them */
+}
+
+/* Full-width horizontal band that spans the entire width of the page */
+.full-width-band {
+  background-color: rgba(236, 236, 236, 1);  /* Light grey background for the entire band */
+  display: flex;  /* Use flexbox to control layout */
+  justify-content: center;  /* Center the content (image) horizontally */
+  align-items: center;  /* Center the image vertically within the band */
+  width: 100%;  /* Ensure the band spans the entire width */
+}
+
+.image-container {
+  position: relative;
+  display: block;  /* Make the figure block-level to control positioning */
+  margin: 0 auto; /* Horizontally center the image container */
+  text-align: center; /* Center image horizontally within the figure */
+}
+
+.caption {
+  position: absolute;
+  bottom: 10px; /* Adjust this for the vertical positioning */
+  left: 50%; /* Adjust this for the horizontal positioning */
+  transform: translateX(-50%); /* Correct centering (to account for caption width) */
+  background-color: rgba(236, 236, 236, 1); /* Semi-transparent black background */
+  color: black;
+  padding: 5px 10px;
+  text-transform: uppercase; /* Make the text uppercase */
+  font-weight: bold;
+  border-radius: 0px;
+}

@@ -1,0 +1,29 @@
+{% extends "master.html" %}
+{% load static %}  {# Add this to load static files #}
+
+{% block title %}
+  Matteo's Food Blog
+{% endblock %}
+
+{% block content %}
+  <h1>Matteo's Food Blog</h1>
+
+  <!--<h3>Recipes</h3> -->
+
+  <link rel="stylesheet" href="{% static 'styles.css' %}"> 
+  <div class="nav-links">
+    <p><a href="{% url 'recipes' %}">Recipes</a></p>
+    <p><a href="{% url 'courses' %}">Courses</a></p>
+    <p><a href="{% url 'thoughts' %}">Thoughts</a></p>
+  </div>
+  
+  <!-- Dish Image -->
+  <!-- <img src="{{ obj.image.url }}" alt="{{ obj.name }}"> -->
+  <div class="full-width-band">
+    <figure class="image-container">
+        <img src="{% static '/cauliflower.jpg' %}" alt="Cauliflower" width="500"> 
+        <figcaption class="caption">Roasted cauliflower, pomelo slices, beurre blanc foam</figcaption>
+    </figure>
+</div>
+
+{% endblock %}
